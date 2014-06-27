@@ -5,6 +5,7 @@ Bundle-SymbolicName: org.apache.hadoop.eclipse;singleton:=true
 Bundle-Version: 0.18
 Bundle-Activator: org.apache.hadoop.eclipse.Activator
 Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.jdt.launching,
