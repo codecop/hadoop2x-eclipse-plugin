@@ -116,7 +116,12 @@ public class HadoopServer {
         Set<JobID> missingJobIds =
             new HashSet<JobID>(runningJobs.keySet());
 
-        JobStatus[] jstatus = client.jobsToComplete();
+        JobStatus[] jstatus = new JobStatus[0];
+        try { 
+          jstatus = client.jobsToComplete(); 
+        } catch (NullPointerException ex) { 
+          // does not work in YARN
+        }
         for (JobStatus status : jstatus) {
 
           JobID jobId = status.getJobID();
