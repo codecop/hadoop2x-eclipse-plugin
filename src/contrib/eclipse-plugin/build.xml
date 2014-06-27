@@ -115,6 +115,7 @@
     <copy file="${hadoop.home}/share/hadoop/common/lib/commons-cli-${commons-cli.version}.jar"  todir="${build.dir}/lib" verbose="true"/>
     <copy file="${hadoop.home}/share/hadoop/common/lib/commons-configuration-${commons-configuration.version}.jar"  todir="${build.dir}/lib" verbose="true"/>
     <copy file="${hadoop.home}/share/hadoop/common/lib/commons-lang-${commons-lang.version}.jar"  todir="${build.dir}/lib" verbose="true"/>
+    <copy file="${hadoop.home}/share/hadoop/common/lib/commons-io-${commons-io.version}.jar"  todir="${build.dir}/lib" verbose="true"/>
     <copy file="${hadoop.home}/share/hadoop/common/lib/jackson-core-asl-${jackson.version}.jar"  todir="${build.dir}/lib" verbose="true"/>
     <copy file="${hadoop.home}/share/hadoop/common/lib/jackson-mapper-asl-${jackson.version}.jar"  todir="${build.dir}/lib" verbose="true"/>
     <copy file="${hadoop.home}/share/hadoop/common/lib/slf4j-log4j12-${slf4j-log4j12.version}.jar"  todir="${build.dir}/lib" verbose="true"/>
@@ -142,6 +143,7 @@
  lib/commons-configuration-1.6.jar,
  lib/commons-httpclient-3.1.jar,
  lib/commons-lang-2.5.jar,
+ lib/commons-io-${commons-io.version}.jar,
  lib/jackson-core-asl-1.8.8.jar,
  lib/jackson-mapper-asl-1.8.8.jar,
  lib/slf4j-log4j12-1.7.5.jar,
